@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Gallery - Bright Minds Academy</title>
+    <meta name="description" content="Browse through our school's photo gallery showcasing various events, activities, and memorable moments at Bright Minds Academy.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/enhanced.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">BM</div>
+                <div class="logo-text">Bright<span>Minds</span></div>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">News & Events</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Gallery Hero Section -->
+        <section class="gallery-hero">
+            <div class="container">
+                <div class="gallery-hero-content fade-in">
+                    <h1 class="gallery-hero-title">School Gallery</h1>
+                    <p class="gallery-hero-subtitle">Explore the vibrant life at Bright Minds Academy through our collection of memorable moments and events.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Filters -->
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="sports">Sports Day</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural Fest</button>
+                    <button class="filter-btn" data-filter="academic">Academic Events</button>
+                    <button class="filter-btn" data-filter="graduation">Graduation</button>
+                    <button class="filter-btn" data-filter="trips">Field Trips</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-container">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Sports Day -->
+                    <div class="gallery-item" data-category="sports">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Students participating in relay race" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Annual Sports Day 2023</h3>
+                                <p>Students showing great sportsmanship during the relay race</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sports">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Basketball match in progress" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Inter-House Basketball</h3>
+                                <p>Intense basketball match between school houses</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Fest -->
+                    <div class="gallery-item" data-category="cultural">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Students performing traditional dance" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Annual Cultural Fest</h3>
+                                <p>Students performing traditional dance on stage</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="cultural">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Art exhibition at cultural fest" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Art Exhibition</h3>
+                                <p>Showcasing student artwork during the cultural fest</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Events -->
+                    <div class="gallery-item" data-category="academic">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Science fair project display" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Annual Science Fair</h3>
+                                <p>Students presenting their innovative science projects</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="academic">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Debate competition in progress" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Inter-School Debate</h3>
+                                <p>Students participating in the regional debate competition</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graduation -->
+                    <div class="gallery-item" data-category="graduation">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Graduation ceremony" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Class of 2023 Graduation</h3>
+                                <p>Celebrating our graduating students' achievements</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="graduation">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Graduates throwing caps" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Cap Toss Moment</h3>
+                                <p>Graduates celebrating their achievement</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Field Trips -->
+                    <div class="gallery-item" data-category="trips">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Students at science museum" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Science Museum Visit</h3>
+                                <p>Students exploring interactive exhibits</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="trips">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Nature trail walk" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Nature Trail Adventure</h3>
+                                <p>Learning about local flora and fauna</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Images -->
+                    <div class="gallery-item" data-category="sports">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Table tennis match" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Table Tennis Tournament</h3>
+                                <p>Students competing in the annual table tennis championship</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="cultural">
+                        <div class="gallery-image-container">
+                            <img src="images/school.jpeg" alt="Music performance" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Music Night</h3>
+                                <p>Students performing in the school band</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button id="load-more" class="btn btn-primary">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Modal -->
+        <div id="photo-modal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="" class="modal-content" id="modal-image">
+            <div id="caption"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-heading">About Bright Minds</h3>
+                    <p class="mb-20">Bright Minds Academy is a premier educational institution dedicated to academic excellence, character development, and preparing students for future success in a global society.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                        <a href="#" class="social-link" title="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                        <a href="#" class="social-link" title="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+                        <a href="#" class="social-link" title="Connect on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+                        <a href="#" class="social-link" title="Watch on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="academics.html" class="footer-link">Academics</a></li>
+                        <li><a href="news.html" class="footer-link">News & Events</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="login.html" class="footer-link">Login</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Elementary School</a></li>
+                        <li><a href="#" class="footer-link">Middle School</a></li>
+                        <li><a href="#" class="footer-link">High School</a></li>
+                        <li><a href="#" class="footer-link">STEM Program</a></li>
+                        <li><a href="#" class="footer-link">Arts & Music</a></li>
+                        <li><a href="#" class="footer-link">Sports Academy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Education Lane<br>Academic City, AC 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@brightminds.edu</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Monday-Friday: 8:00 AM - 5:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bright Minds Academy. All Rights Reserved. | Designed with Accessibility in Mind</p>
+                <p class="mt-10">WCAG 2.1 Compliant | <a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+</body>
+</html>

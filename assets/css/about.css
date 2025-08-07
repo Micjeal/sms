@@ -1,0 +1,419 @@
+/* About Page Specific Styles */
+
+/* About Hero Section */
+.about-hero {
+    background: var(--gradient-blue);
+    color: var(--white);
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjEuNSIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwLjA3Ii8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+    opacity: 0.3;
+}
+
+.about-hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-hero-subtitle {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Mission Vision Values Section */
+.mission-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.mission-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-gold);
+}
+
+.mission-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    font-size: 2rem;
+    color: var(--primary-blue);
+}
+
+.mission-card h3 {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.mission-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* History Timeline */
+.history-section {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--gradient-gold);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 40px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.timeline-content {
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content:after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-left-color: var(--white);
+}
+
+.timeline-item:nth-child(even) .timeline-content:after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: var(--white);
+}
+
+.timeline-year {
+    display: inline-block;
+    background: var(--gradient-blue);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.timeline-title {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+
+.timeline-header {
+    margin-bottom: 15px;
+}
+
+.timeline-desc {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* Leadership Team */
+.leadership-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.leader-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.leader-image {
+    width: 100%;
+    height: 300px;
+    background: var(--gradient-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--accent-gold);
+    font-weight: bold;
+}
+
+.leader-info {
+    padding: 30px;
+    text-align: center;
+}
+
+.leader-name {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.leader-title {
+    color: var(--accent-gold);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.leader-bio {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.leader-contact {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-link {
+    width: 40px;
+    height: 40px;
+    background: var(--light-gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+    transition: var(--transition);
+}
+
+.contact-link:hover {
+    background: var(--gradient-gold);
+    color: var(--primary-blue);
+}
+
+/* Achievements Section */
+.achievements-section {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.achievement-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.achievement-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+}
+
+.achievement-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.achievement-label {
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .timeline:before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 60px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+    
+    .timeline-year {
+        left: 20px;
+        transform: translateY(-50%);
+    }
+    
+    .timeline-content:after {
+        display: none;
+    }
+    
+    .leadership-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 80px 0 60px;
+    }
+    
+    .about-hero-title {
+        font-size: 2rem;
+    }
+    
+    .mission-section,
+    .history-section,
+    .leadership-section,
+    .achievements-section {
+        padding: 60px 0;
+    }
+    
+    .mission-card {
+        padding: 30px 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px !important;
+    }
+    
+    .timeline-year {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    
+    .leader-image {
+        height: 250px;
+        font-size: 3rem;
+    }
+    
+    .leader-info {
+        padding: 20px;
+    }
+}

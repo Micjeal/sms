@@ -1,0 +1,121 @@
+/* Home Page Specific Styles */
+.teacher-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.teacher-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.teacher-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.teacher-photo {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.teacher-container:hover .teacher-photo {
+    transform: translateY(-5px);
+}
+
+.teacher-text {
+    flex: 1.5;
+}
+
+.teacher-title {
+    color: var(--accent-gold);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.teacher-bio {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.teacher-qualifications {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.teacher-qualifications li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+    color: var(--text-light);
+}
+
+.teacher-qualifications i {
+    color: var(--accent-gold);
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.teacher-cta {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--white);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.teacher-cta:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .teacher-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .teacher-container.reverse {
+        flex-direction: column;
+    }
+    
+    .teacher-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .teacher-text {
+        text-align: center;
+    }
+    
+    .teacher-qualifications {
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 576px) {
+    .teacher-cta {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .view-all-faculty {
+        margin-top: 60px;
+    }
+}

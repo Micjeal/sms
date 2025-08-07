@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events | Bright Minds Academy</title>
+    <meta name="description" content="Stay updated with the latest news, events, and announcements from Bright Minds Academy.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/enhanced.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+</head>
+<body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">BM</div>
+                <div class="logo-text">Bright<span>Minds</span></div>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">News & Events</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- News Hero Section -->
+        <section class="news-hero">
+            <div class="container">
+                <div class="news-hero-content fade-in">
+                    <h1 class="news-hero-title">News & Events</h1>
+                    <p class="news-hero-subtitle">Stay connected with the latest happenings, achievements, and upcoming events at Bright Minds Academy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured News Section -->
+        <section class="featured-news">
+            <div class="container">
+                <h2 class="section-title fade-in">Featured Story</h2>
+                
+                <div class="featured-article fade-in delay-1">
+                    <div class="featured-image">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="featured-content">
+                        <h2>Students Win State Science Competition</h2>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> October 25, 2023</span>
+                            <span><i class="fas fa-user"></i> By Admin</span>
+                            <span><i class="fas fa-tag"></i> Achievement</span>
+                        </div>
+                        <p class="featured-excerpt">Our robotics team has achieved remarkable success at the State Science Competition, securing first place with their innovative environmental monitoring system. The project demonstrates exceptional creativity and technical skill, earning recognition from industry professionals and academic experts.</p>
+                        <a href="#" class="btn btn-primary">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Grid Section -->
+        <section class="news-grid-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Latest News</h2>
+                
+                <div class="news-filter fade-in delay-1">
+                    <button class="filter-btn active" data-filter="all">All News</button>
+                    <button class="filter-btn" data-filter="academic">Academic</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="achievements">Achievements</button>
+                </div>
+                
+                <div class="news-grid">
+                    <article class="news-card fade-in delay-2" data-category="academic">
+                        <div class="news-image">
+                            <div class="news-category">Academic</div>
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">New STEM Lab Opens for Fall Semester</h3>
+                            <p class="news-excerpt">State-of-the-art laboratory facilities now available for advanced science and technology courses, featuring cutting-edge equipment and collaborative learning spaces.</p>
+                            <div class="news-meta">
+                                <span class="news-date">October 20, 2023</span>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card fade-in delay-3" data-category="sports">
+                        <div class="news-image">
+                            <div class="news-category">Sports</div>
+                            <i class="fas fa-basketball-ball"></i>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Basketball Team Advances to Regional Finals</h3>
+                            <p class="news-excerpt">Our varsity basketball team secured their spot in the regional finals with an impressive 78-65 victory over Central High School last Friday night.</p>
+                            <div class="news-meta">
+                                <span class="news-date">October 18, 2023</span>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card fade-in delay-4" data-category="achievements">
+                        <div class="news-image">
+                            <div class="news-category">Achievement</div>
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">National Merit Scholarship Recipients</h3>
+                            <p class="news-excerpt">Five of our senior students have been named National Merit Scholarship recipients, recognizing their outstanding academic achievements and potential.</p>
+                            <div class="news-meta">
+                                <span class="news-date">October 15, 2023</span>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card fade-in delay-5" data-category="events">
+                        <div class="news-image">
+                            <div class="news-category">Event</div>
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Annual Arts Festival This Weekend</h3>
+                            <p class="news-excerpt">Join us for our annual arts festival featuring student artwork, musical performances, and theatrical presentations from all grade levels.</p>
+                            <div class="news-meta">
+                                <span class="news-date">October 12, 2023</span>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card fade-in delay-6" data-category="academic">
+                        <div class="news-image">
+                            <div class="news-category">Academic</div>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">College Acceptance Rates Reach New High</h3>
+                            <p class="news-excerpt">Our graduating class of 2023 achieved a 98% college acceptance rate, with students accepted to top universities nationwide including Ivy League institutions.</p>
+                            <div class="news-meta">
+                                <span class="news-date">October 10, 2023</span>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card fade-in delay-7" data-category="events">
+                        <div class="news-image">
+                            <div class="news-category">Event</div>
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Parent-Teacher Conference Schedule</h3>
+                            <p class="news-excerpt">Fall parent-teacher conferences are scheduled for November 2-3. Online scheduling is now available through the parent portal.</p>
+                            <div class="news-meta">
+                                <span class="news-date">October 8, 2023</span>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section class="events-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Upcoming Events</h2>
+                <p class="section-subtitle fade-in delay-1">Mark your calendars for these important school events</p>
+                
+                <div class="events-grid">
+                    <div class="event-card fade-in delay-2">
+                        <div class="event-header">
+                            <div class="event-date-box">
+                                <div class="event-month">NOV</div>
+                                <div class="event-day">15</div>
+                            </div>
+                            <div class="event-info">
+                                <h3>Science Fair 2023</h3>
+                                <div class="event-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>9:00 AM - 3:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-body">
+                            <p class="event-description">Annual science fair showcasing innovative student projects across all grade levels. Interactive exhibits, demonstrations, and awards ceremony.</p>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Main Gymnasium</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Register</a>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card fade-in delay-3">
+                        <div class="event-header">
+                            <div class="event-date-box">
+                                <div class="event-month">NOV</div>
+                                <div class="event-day">22</div>
+                            </div>
+                            <div class="event-info">
+                                <h3>Thanksgiving Break</h3>
+                                <div class="event-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>All Day</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-body">
+                            <p class="event-description">School closed for Thanksgiving holiday. Classes resume Monday, November 27th. Enjoy time with family and friends!</p>
+                            <div class="event-location">
+                                <i class="fas fa-home"></i>
+                                <span>No School</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card fade-in delay-4">
+                        <div class="event-header">
+                            <div class="event-date-box">
+                                <div class="event-month">DEC</div>
+                                <div class="event-day">5</div>
+                            </div>
+                            <div class="event-info">
+                                <h3>Winter Concert</h3>
+                                <div class="event-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>7:00 PM - 9:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-body">
+                            <p class="event-description">Join us for our annual winter concert featuring performances by the school band, choir, and orchestra. Free admission for all families.</p>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>School Auditorium</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Get Tickets</a>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card fade-in delay-5">
+                        <div class="event-header">
+                            <div class="event-date-box">
+                                <div class="event-month">DEC</div>
+                                <div class="event-day">15</div>
+                            </div>
+                            <div class="event-info">
+                                <h3>College Fair</h3>
+                                <div class="event-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>6:00 PM - 8:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-body">
+                            <p class="event-description">Representatives from over 50 colleges and universities will be available to meet with students and families. Information sessions and application workshops included.</p>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Cafeteria & Library</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content fade-in">
+                    <h2 class="newsletter-title">Stay Connected</h2>
+                    <p class="newsletter-subtitle">Subscribe to our newsletter for the latest news, events, and important updates from Bright Minds Academy.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-heading">About Bright Minds</h3>
+                    <p class="mb-20">Bright Minds Academy is a premier educational institution dedicated to academic excellence, character development, and preparing students for future success in a global society.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Visit our Facebook page" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                        <a href="#" class="social-link" title="Follow us on Twitter" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                        <a href="#" class="social-link" title="Follow us on Instagram" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+                        <a href="#" class="social-link" title="Connect on LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+                        <a href="#" class="social-link" title="Watch on YouTube" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="academics.html" class="footer-link">Academics</a></li>
+                        <li><a href="news.html" class="footer-link">News & Events</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="login.html" class="footer-link">Login</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Elementary School</a></li>
+                        <li><a href="#" class="footer-link">Middle School</a></li>
+                        <li><a href="#" class="footer-link">High School</a></li>
+                        <li><a href="#" class="footer-link">STEM Program</a></li>
+                        <li><a href="#" class="footer-link">Arts & Music</a></li>
+                        <li><a href="#" class="footer-link">Sports Academy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Education Lane<br>Academic City, AC 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@brightminds.edu</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Monday-Friday: 8:00 AM - 5:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bright Minds Academy. All Rights Reserved. | Designed with Accessibility in Mind</p>
+                <p class="mt-10">WCAG 2.1 Compliant | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.querySelector('i').classList.remove('fa-times');
+                navToggle.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Back to top button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll animations
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    el.classList.add('fade-in');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        document.addEventListener('DOMContentLoaded', animateOnScroll);
+
+        // News filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const newsCards = document.querySelectorAll('.news-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Filter news cards
+                newsCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Newsletter form submission
+        const newsletterForm = document.querySelector('.newsletter-form');
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = e.target.querySelector('.newsletter-input').value;
+            alert('Thank you for subscribing! You will receive our latest updates at ' + email);
+            e.target.reset();
+        });
+        
+        // Initialize animations on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            animateOnScroll();
+        });
+    </script>
+</body>
+</html>
